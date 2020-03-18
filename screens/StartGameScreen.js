@@ -42,11 +42,6 @@ const StartGameScreen = props => {
     Keyboard.dismiss();
   };
 
-  // let confirmedOutput;
-  // if (confirmed) {
-  //   confirmedOutput = <Text>Chosen Number: {selectedNumber}</Text>
-  // }
-
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <View style={styles.screen}>
@@ -85,7 +80,7 @@ const StartGameScreen = props => {
           <Card style={styles.summaryContainer}>
             <Text>You selected</Text>
             <NumberContainer>{selectedNumber}</NumberContainer>
-            <Button title="START GAME"/>
+            <Button title="START GAME" onPress={()=> props.onStartGame(selectedNumber)}/>
           </Card>
         )}
       </View>
