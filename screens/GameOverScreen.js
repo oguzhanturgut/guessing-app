@@ -18,13 +18,13 @@ const GameOverScreen = (props) => {
   return (
     <ScrollView>
       <View style={styles.screen}>
-        <TitleText>The Game is Over</TitleText>
+        <TitleText>The Game is Over!</TitleText>
         <View style={styles.imageContainer}>
           <Image
             source={require("../assets/success.png")}
             // source={{
             //   uri:
-            //     "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Summit_of_the_Matterhorn.jpg/640px-Summit_of_the_Matterhorn.jpg",
+            //     'https://cdn.pixabay.com/photo/2016/05/05/23/52/mountain-summit-1375015_960_720.jpg'
             // }}
             style={styles.image}
             resizeMode="cover"
@@ -53,13 +53,13 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   imageContainer: {
-    width: Dimensions.get("window").width * 0.75,
-    height: Dimensions.get("window").width * 0.75,
-    borderRadius: (Dimensions.get("window").width * 0.75) / 2,
+    width: Dimensions.get("window").width * 0.7,
+    height: Dimensions.get("window").width * 0.7,
+    borderRadius: (Dimensions.get("window").width * 0.7) / 2,
     borderWidth: 3,
     borderColor: "black",
     overflow: "hidden",
-    marginVertical: Dimensions.get("window").height / 50,
+    marginVertical: Dimensions.get("window").height / 30,
   },
   image: {
     width: "100%",
